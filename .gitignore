@@ -4,8 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-/Jenkinsfile.example
-
+/Jenkinsfile
+/cert.crt
+/cert.key
 # testing
 /coverage
 
