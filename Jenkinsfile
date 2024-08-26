@@ -46,7 +46,7 @@ pipeline {
             steps{
                 script {
                     withSonarQubeEnv('sonarqubeserver'){
-                        sh "sonar-scanner -Dsonar.host.url=${SONAR_HOST_URL} -Dsonar.login=${SONAR_AUTH_TOKEN} -Dsonar.projectName=VeWize_BE -Dsonar.ProjectVersion=1.0 -Dsonar.projectKey=VeWize_BE -Dsonar.java.binaries=/usr/lib/jvm/java-11-openjdk/libs -Dsonar.exclusions=build/** -Dsonar.sources=."
+                        sh "sonar-scanner -Dsonar.host.url=${SONAR_HOST_URL} -Dsonar.login=${SONAR_AUTH_TOKEN} -Dsonar.projectName=React-blogs -Dsonar.ProjectVersion=1.0 -Dsonar.projectKey=React-blogs -Dsonar.java.binaries=/usr/lib/jvm/java-11-openjdk/libs -Dsonar.exclusions=build/** -Dsonar.sources=."
                     }
                 }
             }
