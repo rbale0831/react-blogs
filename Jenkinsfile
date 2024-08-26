@@ -57,7 +57,7 @@ pipeline {
 				script {
 					sh "npx json-server -p 8000 --watch .\data\db.json > data.log 2>&1 & "
 					sleep(time: 10, unit: 'SECONDS')
-					sh "nohup npm run preview > react.log 2>&1 & "
+					sh "(PORT=3002 nohup npx serve -s build > serve.log 2>&1 &) > react.log 2>&1 & "
 					sleep(time: 10, unit: 'SECONDS')
 				}
 			}
