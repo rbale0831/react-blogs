@@ -1,17 +1,3 @@
-// import { useParams } from "react-router";
-
-// const BlogDetails = () => {
-//     const { id } = useParams()
-
-//     return ( 
-//         <div className="blog-details">
-//             <h2>Blog Details - { id }</h2>
-//         </div>
-//      );
-// }
- 
-
-// 26
 import { Link, useHistory, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 
