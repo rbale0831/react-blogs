@@ -26,7 +26,7 @@ pipeline {
 
         stage('Checkout from SCM') {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/rbale3108/blog_website.git'
+                git branch: 'main', credentialsId: '60d1800d-a1f9-4462-b1bf-3205736c62a2', url: 'https://github.com/rbale3108/blog_website.git'
             }
         }
 
